@@ -1,0 +1,22 @@
+.button {
+  font-family: inherit;
+  border-radius: 32px;
+  border: 2px solid var(--beauty-landing-2-s2);
+  font-weight: 600;
+  font-size: 18px;
+  background: var(--beauty-landing-2-s2);
+  color: var(--beauty-landing-2-background);
+  cursor: pointer;
+  margin-bottom: 14px;
+  padding: 16px 32px;
+}
+.button:hover {
+  border: 2px solid var(--beauty-landing-2-s2);
+  border-radius: 32px;
+  color: var(--beauty-landing-2-c1);
+  background: var(--beauty-landing-2-background);
+}
+.button:active {
+  background: var(--beauty-landing-2-s2);
+  color: var(--beauty-landing-2-background);
+}

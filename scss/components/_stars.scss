@@ -1,0 +1,34 @@
+@mixin star-base {
+  position: absolute;
+  animation: spin 3s linear infinite;
+}
+
+@mixin star-one {
+  @include star-base;
+  fill: var(--beauty-landing-2-c6);
+  transform: scale(1.5);
+}
+
+@mixin star-two {
+  @include star-base;
+  fill: var(--beauty-landing-2-s2);
+  transform: scale(2.5);
+}
+
+@mixin star-three {
+  @include star-base;
+  fill: var(--beauty-landing-2-s5);
+  transform: scale(3.5);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

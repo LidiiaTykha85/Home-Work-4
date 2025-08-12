@@ -1,0 +1,26 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+@import './base';
+
+@import './utils/text-brend';
+@import './utils/text-centerd';
+
+@import './components/background';
+@import './components/buttons';
+@import './components/carousel-button';
+
+@import './components/ourprocedures-card';
+
+@import './components/stars.scss';
+
+@import './layouts/about-us-section';
+@import './layouts/contacts-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/modal';
+@import './layouts/ourprocedures-section';
+@import './layouts/section';
+@import './layouts/why-us-section';

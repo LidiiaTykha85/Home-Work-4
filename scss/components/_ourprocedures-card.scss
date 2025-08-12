@@ -1,0 +1,33 @@
+.ourprocedures-card {
+  position: relative;
+  border-radius: 120px 4px;
+  width: 344px;
+  height: 456px;
+  padding: 372px 24px 32px 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &__mask {
+    position: absolute;
+    border-radius: 120px 4px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  &__text {
+    text-align: center;
+
+    color: var(--beauty-landing-2-background);
+    line-height: 1.2;
+  }
+}

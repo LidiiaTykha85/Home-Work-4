@@ -1,0 +1,64 @@
+.aboutus-section {
+  margin-bottom: 176px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  &__content {
+    max-width: 710px;
+  }
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  &__texts {
+    line-height: 1.7;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__text {
+    &--limited {
+      max-width: 580px;
+    }
+  }
+  &__images {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    position: relative;
+  }
+  &__photo {
+    border-radius: 50%;
+    width: 327px;
+    height: 328px;
+
+    &--second {
+      margin-top: 40px;
+      margin-left: 164px;
+    }
+  }
+
+  &__star {
+    &--one {
+      @include star-one;
+      top: 366px;
+      left: 120px;
+    }
+
+    &--two {
+      @include star-two;
+      top: 32px;
+      left: 442px;
+    }
+
+    &--three {
+      @include star-three;
+      top: 270px;
+      left: 472px;
+    }
+  }
+}
