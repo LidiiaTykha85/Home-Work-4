@@ -10,6 +10,11 @@
   justify-content: center;
   padding: 20px 0;
   transition: opacity 0.3s, visibility 0.3s;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -19,7 +24,7 @@
   width: 100%;
   height: 100%;
   border-radius: 48px;
-  padding: 42px 144px;
+  padding: 48px;
   background: var(--beauty-landing-2-c1);
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
@@ -27,93 +32,52 @@
   background-size: cover;
   color: var(--beauty-landing-2-background);
   overflow-y: auto;
-}
-.modal-btn-close {
-  position: absolute;
-  right: 42px;
-  top: 42px;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.modal-coll-title {
-  font-family: Play, sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  max-width: 440px;
-  width: 100%;
-  line-height: 1.2;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.accent-modal {
-  color: var(--beauty-landing-2-s2);
-}
-.modal-coll-text {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.2;
-  width: 100%;
-  max-width: 280px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 24px;
-  color: var(--beauty-landing-2-background);
-}
-.form-field {
-  position: relative;
-  text-align: center;
-  margin-bottom: 24px;
-}
-.form-label {
-  display: block;
-  position: absolute;
-  padding: 18px 32px;
-}
-.form-input {
-  border: 2px solid var(--beauty-landing-2-s5);
-  border-radius: 32px;
-  background-color: transparent;
-  max-width: 310px;
-  width: 100%;
-  padding: 18px 32px;
-  color: var(--beauty-landing-2-background);
-}
-.form-input:focus {
-  border-color: var(--beauty-landing-2-s5);
-  outline: none;
-  background-color: var(--beauty-landing-2-s5);
-}
-.form-input::placeholder {
-  color: var(--beauty-landing-2-background);
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-.form-terms {
-  max-width: 205px;
-  line-height: 1.15;
-  font-size: 12px;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 8px;
-  color: var(--beauty-landing-2-s5);
-}
-.form-terms-link {
-  color: var(--beauty-landing-2-s5);
-  text-underline-offset: 2px;
-  margin-bottom: 42px;
-}
-
-.modal-button {
-  display: block;
-  margin: 0 auto;
-  transition: background-color 0.2s, color 0.2s;
-  cursor: pointer;
-}
-.modal-button:hover {
-  background-color: transparent;
-  color: var(--beauty-landing-2-background);
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+  &__btn-close {
+    position: absolute;
+    right: 42px;
+    top: 42px;
+  }
+  &__coll-title {
+    font-family: Play, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 440px;
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__coll-text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    color: var(--beauty-landing-2-background);
+  }
+  &__accent {
+    color: var(--beauty-landing-2-s2);
+  }
+  &__form-field {
+    position: relative;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+    margin-bottom: 8px;
+    &:hover {
+      background-color: transparent;
+      color: var(--beauty-landing-2-background);
+    }
+  }
 }

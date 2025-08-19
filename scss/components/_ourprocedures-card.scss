@@ -1,8 +1,11 @@
 .ourprocedures-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border-radius: 120px 4px;
-  width: 344px;
-  height: 456px;
+  width: 320px;
+  height: 416px;
   padding: 372px 24px 32px 24px;
   background: linear-gradient(
     180deg,
@@ -11,7 +14,11 @@
     #011c44 99.06%
   );
   transition: transform 0.3s;
-
+  overflow: hidden;
+  @media screen and (min-width: $bp-tablet) {
+    width: 344px;
+    height: 456px;
+  }
   &:hover {
     transform: scale(1.05);
   }

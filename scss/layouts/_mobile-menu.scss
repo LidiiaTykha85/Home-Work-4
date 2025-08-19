@@ -1,0 +1,31 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--beauty-landing-2-background);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  z-index: 2;
+
+  &.is-open {
+    transform: translateX(100%);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: var(--beauty-landing-2-c1);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,14 @@
+.form-terms {
+  max-width: 205px;
+  line-height: 1.15;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8px;
+  color: var(--beauty-landing-2-s5);
+  &__link {
+    color: var(--beauty-landing-2-s5);
+    text-underline-offset: 2px;
+    margin-bottom: 42px;
+  }
+}

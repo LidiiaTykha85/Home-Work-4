@@ -1,42 +1,43 @@
-.contacts-container {
-  display: flex;
-  gap: 32px;
-}
-.contact-map {
-  flex-shrink: 0;
-  border: none;
-  border-radius: 32px;
-}
 .contacts-section {
   margin-bottom: 102px;
-}
-.form {
-  font-weight: 600;
-}
-.contact-form {
-  max-width: 422px;
-  width: 100%;
-  height: 482px;
-  padding: 48px 56px;
-  /* margin: o auto; */
-  border-radius: 32px;
-  background-color: var(--beauty-landing-2-c1);
-  background-image: url(../images/footer-background.png);
-}
-
-.contacts-text {
-  font-weight: 600;
-  font-size: 22px;
-  text-align: center;
-  color: var(--beauty-landing-2-background);
-}
-.form-input {
-  font-weight: 400;
-  font-size: 13px;
-  color: var(--beauty-landing-2-background);
-  padding: 18px 32px;
-}
-.visibility-hidden {
-  position: absolute;
-  left: -9999px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+    margin-bottom: 8px;
+    &__:hover {
+      background-color: transparent;
+      color: var(--beauty-landing-2-background);
+    }
+  }
+  &__map {
+    height: 232px;
+    margin: 0 -24px;
+    // flex-shrink: 0;
+    border: none;
+    border-radius: 32px;
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      margin: auto;
+      width: 605px;
+      height: 481px;
+    }
+  }
+  &__form-field {
+    margin-bottom: 16px;
+  }
 }

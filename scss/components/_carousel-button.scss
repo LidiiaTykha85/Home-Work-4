@@ -9,15 +9,14 @@
   border-radius: 50%;
   background-color: transparent;
   fill: var(--beauty-landing-2-c1);
-
   border: 2px solid var(--beauty-landing-2-c1);
   cursor: pointer;
-}
-.carousel-button.prev {
-  transform: rotate(180deg);
-}
-.carousel-button:hover {
-  background-color: var(--beauty-landing-2-s2);
-  fill: var(--beauty-landing-2-background);
-  border: 2px solid var(--beauty-landing-2-s2);
+  &:hover {
+    background-color: var(--beauty-landing-2-s2);
+    border: 2px solid var(--beauty-landing-2-s2);
+    fill: var(--beauty-landing-2-background);
+  }
+  &.prev {
+    transform: rotate(180deg);
+  }
 }

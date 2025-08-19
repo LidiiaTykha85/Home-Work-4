@@ -1,0 +1,22 @@
+.form {
+  font-weight: 600;
+}
+
+.contact-section {
+  &__form {
+    max-width: 422px;
+    width: 100%;
+    height: 482px;
+    padding: 48px 56px;
+    /* margin: o auto; */
+    border-radius: 32px;
+    background-color: var(--beauty-landing-2-c1);
+    background-image: url(../images/footer-background.png);
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+  }
+}

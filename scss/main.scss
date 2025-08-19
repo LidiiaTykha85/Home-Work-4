@@ -9,17 +9,21 @@
 @import './components/background';
 @import './components/buttons';
 @import './components/carousel-button';
-
+@import './components/input';
 @import './components/ourprocedures-card';
-
+@import './components/pagination';
 @import './components/stars.scss';
+@import './components/visibility-hidden';
 
 @import './layouts/about-us-section';
 @import './layouts/contacts-section';
 @import './layouts/container';
 @import './layouts/footer';
+@import './layouts/form-terms';
+@import './layouts/forms';
 @import './layouts/header';
 @import './layouts/hero-section';
+@import './layouts/mobile-menu';
 @import './layouts/modal';
 @import './layouts/ourprocedures-section';
 @import './layouts/section';

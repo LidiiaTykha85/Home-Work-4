@@ -2,10 +2,15 @@ body {
   color: var(--beauty-landing-2-c1);
   background: var(--beauty-landing-2-background);
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 22px;
+    font-weight: 400;
+  }
 }
 ul {
   list-style-type: none;
@@ -32,6 +37,12 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+img {
+  display: block;
+  max-width: 100;
+  height: auto;
+  object-fit: cover;
 }
 a {
   display: inline-block;
