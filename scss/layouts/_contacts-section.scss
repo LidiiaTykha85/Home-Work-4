@@ -1,9 +1,12 @@
 .contacts-section {
-  margin-bottom: 102px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 102px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       gap: 32px;
@@ -26,15 +29,23 @@
     // flex-shrink: 0;
     border: none;
     border-radius: 32px;
+    order: 2;
     @media screen and (min-width: $bp-tablet) {
       margin: auto;
       width: 320px;
       height: 500px;
+      order: 1;
     }
     @media screen and (min-width: $bp-desktop) {
       margin: auto;
       width: 605px;
       height: 481px;
+    }
+  }
+  &__form {
+    order: 1;
+    @media screen and (min-width: $bp-tablet) {
+      order: 2;
     }
   }
   &__form-field {

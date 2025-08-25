@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -122,9 +122,11 @@
           <div class="hero-section__container">
             <h3 class="hero-section__text">Косметологічна клініка</h3>
             <h1 lang="en" class="hero-section__title">Beauty Zone</h1>
-            <button class="button modal-btn-open" type="button">
-              Замовити дзвінок
-            </button>
+            <div class="hero-section__button-wrapper">
+              <button class="button modal-btn-open" type="button">
+                Замовити дзвінок
+              </button>
+            </div>
             <p class="hero-section__paragraf">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -260,7 +262,7 @@
               </button>
               <div class="ourprocedures-section__container swiper-container">
                 <ul class="ourprocedures-section__list swiper-wrapper">
-                  <li swiper-slide>
+                  <li class="swiper-slide">
                     <article class="ourprocedures-card">
                       <img
                         class="ourprocedures-card__mask"
@@ -272,7 +274,7 @@
                       </h3>
                     </article>
                   </li>
-                  <li swiper-slide>
+                  <li class="swiper-slide">
                     <article class="ourprocedures-card">
                       <img
                         class="ourprocedures-card__mask"
@@ -284,7 +286,7 @@
                       </h3>
                     </article>
                   </li>
-                  <li swiper-slide>
+                  <li class="swiper-slide">
                     <article class="ourprocedures-card">
                       <img
                         class="ourprocedures-card__mask"
@@ -296,23 +298,25 @@
                   </li>
                 </ul>
                 <div class="pagination">
-                  <span
+                  <button
                     class="pagination__button"
                     type="button"
-                    aria-label="Go to slide 1"
-                  ></span>
-                  <span
+                    aria-label="Go to
+                    slide 1"
+                  ></button>
+                  <button
                     class="pagination__button"
                     type="button"
                     aria-label="Go to slide 2"
-                  ></span>
-                  <span
+                  ></button>
+                  <button
                     class="pagination__button"
                     type="button"
                     aria-label="Go to slide 3"
-                  ></span>
+                  ></button>
                 </div>
               </div>
+
               <button
                 class="ourprocedures-section__button carousel-button next"
                 type="button"
@@ -557,9 +561,9 @@
         </form>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/formats-slider.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/ourprocedures-slider.js"></script>
+    <script src="./js/js mobile-menu.js"></script>
     <script src="./js/js modal-menu.js"></script>
   </body>
 </html>

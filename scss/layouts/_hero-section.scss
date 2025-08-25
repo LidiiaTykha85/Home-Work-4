@@ -14,30 +14,58 @@
     background-image: url(/images/hero-section-background@2x.jpg);
   }
   &__container {
-    margin-left: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $bp-tablet) {
+      align-items: flex-start;
+      margin-left: 106px;
+    }
   }
 
   &__text {
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 8px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
   }
   &__title {
     font-family: 'Play', sans-serif;
     font-weight: 700;
-    font-size: 46px;
-    line-height: 0.8;
+    font-size: 54px;
     color: var(--beauty-landing-2-s2);
-    margin-bottom: 40px;
-    max-width: 530px;
+    margin-bottom: 32px;
+    max-width: 330px;
+    text-transform: capitalize;
+    text-align: center;
+    white-space: nowrap;
+    display: inline;
+
     @media screen and (min-width: $bp-tablet) {
       font-size: 140px;
+      max-width: 530px;
+      margin-bottom: 40px;
       line-height: 0.8;
+      white-space: normal;
+      display: block;
+      text-align: left;
     }
   }
   &__paragraf {
-    font-size: 12px;
-    max-width: 238px;
-    width: 100%;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.6;
     text-align: center;
+    max-width: 240px;
+    color: var(--beauty-landing-2-c3);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 12px;
+      max-width: 238px;
+      width: 100%;
+    }
   }
 }
