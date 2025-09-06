@@ -36,7 +36,7 @@
 
   &__images {
     display: none;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       position: relative;
       display: flex;
       flex-grow: 1;

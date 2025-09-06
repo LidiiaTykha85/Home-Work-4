@@ -26,7 +26,8 @@
   &::after {
     display: none;
     @media screen and (min-width: $bp-tablet) {
-      background-image: url(../../images/decor-footer.png);
+      display: block;
+      background-image: url(../images/decor-footer.png);
       // background-image: url(/images/decor-footer.png);
       background-repeat: no-repeat;
       width: 250px;

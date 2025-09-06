@@ -7,7 +7,7 @@
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   z-index: 1;
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     padding: 32px 0;
   }
 
@@ -24,7 +24,7 @@
   }
   &__menu {
     display: none;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 64px;
       flex-grow: 1;
@@ -38,8 +38,8 @@
       gap: 32px;
     }
 
-    justify-content: center;
     @media screen and (min-width: $bp-desktop) {
+      justify-content: center;
     }
   }
   &__link {
@@ -66,7 +66,7 @@
     border: none;
     fill: var(--beauty-landing-2-background);
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: none;
     }
   }

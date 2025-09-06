@@ -18,13 +18,18 @@
 }
 
 .modal {
+  padding: 48px 24px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   max-width: 732px;
   max-height: 682px;
   width: 100%;
   height: 100%;
   border-radius: 48px;
-  padding: 48px;
+
   background: var(--beauty-landing-2-c1);
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
@@ -42,12 +47,14 @@
   }
   &__coll-title {
     font-family: Play, sans-serif;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     max-width: 440px;
     width: 100%;
-    line-height: 1.2;
+    line-height: 1.1;
     margin-bottom: 40px;
+    margin-top: 16px;
+
     text-align: center;
   }
   &__coll-text {

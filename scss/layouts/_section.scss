@@ -1,10 +1,9 @@
 .section-title {
   color: var(--beauty-landing-2-c1);
   font-family: 'play';
-  font-weight: 500;
+  font-weight: 700;
   font-size: 32px;
   @media screen and (min-width: $bp-tablet) {
-    font-weight: 700;
     font-size: 64px;
   }
 }

@@ -6,11 +6,13 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 24px;
+    align-items: center;
 
     @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       gap: 32px;
       align-items: stretch;
+      justify-content: center;
     }
   }
   &__button {
@@ -24,33 +26,27 @@
       color: var(--beauty-landing-2-background);
     }
   }
-  // &__map,
-  // &__form {
-  //   flex: 1 1 auto; // щоб гарно тягнулися
-  // }
+
   &__map {
     flex-shrink: 0;
     height: 232px;
+    width: 100vw;
     margin: 0 -24px;
     border: none;
-    border-radius: 32px;
 
     @media screen and (min-width: $bp-tablet) {
       margin: 0;
       width: 320px;
       height: 500px;
+      border-radius: 32px;
     }
     @media screen and (min-width: $bp-desktop) {
       width: 605px;
       height: 481px;
+      border-radius: 32px;
     }
   }
-  // &__form {
 
-  //   @media screen and (min-width: $bp-tablet) {
-
-  //   }
-  // }
   &__form-field {
     margin-bottom: 16px;
   }

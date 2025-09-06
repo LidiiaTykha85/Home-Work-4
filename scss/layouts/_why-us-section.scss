@@ -22,14 +22,13 @@
     line-height: 1.2;
   }
   &__item {
-    flex-basis: calc((100% - 112px) / 3);
+    flex: 1 0 auto;
+    // flex-basis: calc((100% - 112px) / 3);
     border-radius: 32px;
-    width: 316px;
+    max-width: 316px;
     height: 181px;
     box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
     background: var(--beauty-landing-2-background);
-  }
-  &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,6 +42,6 @@
   }
   &__text {
     font-size: 18px;
-    line-height: 133%;
+    line-height: 1.3;
   }
 }
