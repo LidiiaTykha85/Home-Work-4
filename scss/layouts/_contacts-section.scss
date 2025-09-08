@@ -1,5 +1,5 @@
 .contacts-section {
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     margin-bottom: 102px;
   }
   &__container {
@@ -8,7 +8,7 @@
     gap: 24px;
     align-items: center;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       gap: 32px;
       align-items: stretch;
@@ -34,7 +34,7 @@
     margin: 0 -24px;
     border: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       margin: 0;
       width: 320px;
       height: 500px;
