@@ -16,7 +16,7 @@
   );
   transition: transform 0.3s;
   overflow: hidden;
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     width: 344px;
     height: 456px;
   }

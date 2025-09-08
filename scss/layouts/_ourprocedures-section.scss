@@ -2,7 +2,7 @@
   &__title {
     margin-bottom: 32px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       margin-bottom: 64px;
     }
   }

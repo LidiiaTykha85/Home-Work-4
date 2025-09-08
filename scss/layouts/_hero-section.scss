@@ -1,10 +1,10 @@
 .hero-section {
   padding: 124px 0;
-  background-image: url(/images/hero-section-background.jpg);
+  background-image: url(../images/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     padding: 272px 0;
   }
 
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       align-items: flex-start;
       margin-left: 106px;
     }
