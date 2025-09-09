@@ -15,6 +15,9 @@
   &__title {
     max-width: 264px;
     line-height: 1.2;
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 460px;
+    }
 
     @media screen and (min-width: $bp-desktop) {
       margin-bottom: 40px;

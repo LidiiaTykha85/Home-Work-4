@@ -87,4 +87,19 @@
       color: var(--beauty-landing-2-background);
     }
   }
+  &__btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: var(--beauty-landing-2-background);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
