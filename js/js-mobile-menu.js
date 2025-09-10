@@ -11,11 +11,10 @@ menuBtnClose.addEventListener('click', toggleMenu);
 
 menuBtnOpen.addEventListener('click', disableScroll);
 menuBtnClose.addEventListener('click', disableScroll);
-const menuLinks = document.querySelectorAll('.mobile-menu__link'); // оголошуєш де перші три написані mobile-menu, menu-btn-open, menu-btn-close
+const menuLinks = document.querySelectorAll('.mobile-menu__link');
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
-    //  це можна в кінці додати
     mobileMenu.classList.remove('is-open');
   });
 });
