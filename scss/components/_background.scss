@@ -4,4 +4,12 @@
   background-size: cover;
   position: relative;
   // z-index: -2;
+  background-position: center top;
+  padding-top: 160px;
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 140px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 120px;
+  }
 }
